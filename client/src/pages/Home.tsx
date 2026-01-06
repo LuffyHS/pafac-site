@@ -1,25 +1,34 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
+import PlansSection from '@/components/PlansSection';
+import AboutSection from '@/components/AboutSection';
+import Footer from '@/components/Footer';
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home Page - Pafac
+ * Design: Minimalismo Corporativo Elegante
+ * 
+ * Seções:
+ * - Header com navegação
+ * - Hero com imagem de família
+ * - Serviços oferecidos
+ * - Planos de assistência
+ * - Sobre a empresa
+ * - Footer com contato
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1">
+        <HeroSection />
+        <ServicesSection />
+        <PlansSection />
+        <AboutSection />
       </main>
+      <Footer />
     </div>
   );
 }
