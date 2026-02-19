@@ -45,8 +45,17 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <Button
+              variant="outline"
+              className="border-primary/30 text-primary hover:bg-primary/5 transition-all duration-200"
+              onClick={() => {
+                window.open('https://area.pafac.com.br', '_blank');
+              }}
+            >
+              Área do Cliente
+            </Button>
             <Button
               className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-200"
               onClick={() => {
@@ -84,16 +93,28 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <Button
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground mt-4"
-              onClick={() => {
-                setIsMenuOpen(false);
-                const plansSection = document.getElementById('planos');
-                plansSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              Contratar Agora
-            </Button>
+            <div className="flex flex-col gap-2 mt-4">
+              <Button
+                variant="outline"
+                className="w-full border-primary/30 text-primary hover:bg-primary/5"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.open('https://area.pafac.com.br', '_blank');
+                }}
+              >
+                Área do Cliente
+              </Button>
+              <Button
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  const plansSection = document.getElementById('planos');
+                  plansSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Contratar Agora
+              </Button>
+            </div>
           </nav>
         )}
       </div>

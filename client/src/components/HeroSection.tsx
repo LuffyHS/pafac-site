@@ -44,8 +44,11 @@ export default function HeroSection() {
                 size="lg"
                 variant="outline"
                 className="border-primary/30 text-primary hover:bg-primary/5 transition-all duration-300"
+                onClick={() => {
+                  window.open('https://area.pafac.com.br', '_blank');
+                }}
               >
-                Saiba Mais
+                Área do Cliente
               </Button>
             </div>
 
@@ -70,7 +73,7 @@ export default function HeroSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl blur-3xl" />
             <img
-              src="/images/hero-family-care.jpg"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663267321078/vVDqtXCbvhfpRiri.jpg"
               alt="Família unida"
               className="relative rounded-2xl shadow-lg object-cover w-full h-96 md:h-full"
             />

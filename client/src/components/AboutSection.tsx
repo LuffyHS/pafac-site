@@ -35,7 +35,7 @@ export default function AboutSection() {
           <div className="relative order-2 md:order-1">
             <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl blur-3xl" />
             <img
-              src="/images/community-support.jpg"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663267321078/WuAmcmICwRSZXvWe.jpg"
               alt="Comunidade Pafac"
               className="relative rounded-2xl shadow-lg object-cover w-full h-96"
             />
